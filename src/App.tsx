@@ -8,6 +8,7 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import AdminDashboard from "./pages/AdminDashboard";
 import PrivateRoute from "./components/PrivateRoute";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
                 <AdminDashboard />
               </PrivateRoute>
             } />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </SnackbarProvider>

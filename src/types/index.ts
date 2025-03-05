@@ -4,7 +4,7 @@ export interface Product {
   name: string;
   price: number;
   description: string;
-  image: string; 
+  image: string; // This will store base64 image data
   category: string;
   quantity: number;
 }

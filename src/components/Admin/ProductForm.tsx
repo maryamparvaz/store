@@ -91,7 +91,22 @@ const ProductForm: React.FC<ProductFormProps> = ({ initialProduct, onSubmit }) =
                   helperText={formik.touched.price && formik.errors.price}
                 />
               </Grid>
-        
+              
+              {/* <Grid item xs={12} sm={6}>
+                <TextField
+                  fullWidth
+                  id="quantity"
+                  name="quantity"
+                  label="Quantity in Stock"
+                  type="number"
+                  value={formik.values.quantity}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  error={formik.touched.quantity && Boolean(formik.errors.quantity)}
+                  helperText={formik.touched.quantity && formik.errors.quantity}
+                />
+              </Grid> */}
+              
               <Grid item xs={12}>
                 <TextField
                   fullWidth
